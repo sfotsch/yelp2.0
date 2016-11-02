@@ -1,0 +1,110 @@
+body, html{
+	margin: 0;
+	padding: 0;
+	background-color: #aa160b;
+}
+
+.container{
+	width: 90%;
+	height: 700px;
+	padding: 0;
+	margin: 0 auto 0 auto;
+	/*background-color: yellow;*/
+}
+
+#title-section{
+	/*background-color: pink;*/
+	width: 700px;
+	height: 200px;
+	margin: 0 auto 0 auto;
+	clear: both;
+}
+
+#yelp-section{
+	margin: 80px 0 0 0;
+	float: left;
+}
+
+#yelp{
+	width: 200px;
+}
+
+#icon-section{
+	width: 100px;
+	float: left;
+	margin: 100px 0 0 -20px;
+}
+
+#icon{
+	width: 100%;
+	margin: -30px 0 0 0;
+}
+
+#search-section{
+	clear: both;
+	margin: 0 auto 0 auto;
+	width: 640px;
+	height: 50px;
+	/*background-color: orange;*/
+}
+
+#find, #near{
+	margin: 0 10px 0 0;
+    padding: 0;
+    display: inline;
+    font-family: 'avenir_next_boldbold';
+}
+
+#location-section, #find-section{
+	background-color: white;
+	width: 250px;
+	display: inline;
+}
+
+
+#find-section{
+	float: left;
+	margin-right: 10px;
+	padding: 3px 8px 3px 8px;
+	border-radius: 3px;
+}
+
+.input{
+	border: none;
+}
+
+#location-section{
+	float: left;
+	margin-right: 10px;
+	padding: 3px 8px 3px 8px;
+	border-radius: 3px;
+}
+
+#submit-button{
+	font-family: 'avenir_next_regularregular';
+	margin-top: 8px;
+}
+
+#topic-section{
+	clear: both;
+	margin: 80px auto 0 auto;
+	width: 770px;
+	/*background-color: green;*/
+}
+
+#restaurant-pic{
+	width: 200px;
+	float: left;
+	margin: 0 30px 0 0;
+}
+
+#shopping-pic{
+	width: 200px;
+	float: left;
+	margin-right: 60px;
+}
+
+#nightlife-pic{
+	width: 200px;
+}
+
