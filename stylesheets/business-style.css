@@ -1,0 +1,26 @@
+/* The side navigation menu */
+.sidenav {
+    height: 100%; 
+    width: 200px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #aa160b; 
+    font-family: 'avenir_next_regularregular';
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+    display: block;
+    font-family: 'avenir_next_regularregular';
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #818181;
+    font-family: 'avenir_next_regularregular';
+}
