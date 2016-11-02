@@ -96,6 +96,10 @@ textarea:focus, input:focus{
 	/*background-color: green;*/
 }
 
+.topic:hover{
+	cursor: pointer;
+}
+
 #restaurant-pic{
 	width: 200px;
 	float: left;
