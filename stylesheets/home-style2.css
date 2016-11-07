@@ -47,9 +47,9 @@ textarea:focus, input:focus{
 #search-section{
 	clear: both;
 	margin: 0 auto 0 auto;
-	width: 640px;
+	width: 620px;
 	height: 50px;
-	/*background-color: orange;*/
+	
 }
 
 #find, #near{
@@ -89,16 +89,25 @@ textarea:focus, input:focus{
 	border: solid 3px #aa160b;
 }
 
-#submit-button{
+#search-button{
 	font-family: 'avenir_next_regularregular';
-	margin-top: 8px;
+	margin-top: 3px;
+	background-color: #aa160b;
+	border-radius: 5px;
+	border: 1px solid #aa160b;
+	padding-top: 5px;
+	padding-bottom: 0;
+}
+
+#search-pic{
+	width: 20px;
 }
 
 #topic-section{
 	clear: both;
-	margin: 85px auto 0 auto;
-	width: 770px;
-
+	margin: 40px auto 0 auto;
+	padding-left: -20px;
+	width: 780px;
 	z-index: 10;
 	position: relative;
 }
@@ -108,96 +117,44 @@ textarea:focus, input:focus{
 }
 
 #restaurant-pic{
-	width: 150px;
+	width: 200px;
 	float: left;
-	margin: 0 30px 0 0;
+	margin: 0 -10px 0 0;
 }
 
 #shopping-pic{
-	width: 150px;
+	width: 200px;
 	float: left;
-	margin-right: 60px;
+	margin-right: -10px;
 }
 
 #more-pic{
-	width: 150px;
+	width: 200px;
 }
 
 #nightlife-pic{
-	width: 150px;
-	margin-right: 60px;
+	width: 200px;
+	margin-right: -10px;
 }
 
 #label-section{
 	clear: both;
-	width: 770px;
-	margin: 15px auto 0 auto;
-	padding-left: 65px;
+	width: 780px;
+	margin: 0 auto 0 auto;
+	padding-left: 95px;
 }
 .label{
 	font-family: 'avenir_next_regularregular';
 	color: #c41200;
 	float: left;
-	margin: 0 80px 0 0;
+	margin: 0 100px 0 0;
 
 }
 
 #nightlife-label{
-	margin-right: 150px;
+	margin-right: 130px;
 }
 
 #shopping-label{
-	margin-right: 135px;
+	margin-right: 110px;
 }
-
-    #circle {
-      width: 200px;
-      height: 200px;
-      -webkit-border-radius: 100px;
-      -moz-border-radius: 100px;
-      border-radius: 100px;
-      background: #c41200;
-      position: absolute;
-      z-index: 0;
-      top: 350px;
-      left: 100px;
-    }
-
-        #circle2 {
-      width: 200px;
-      height: 200px;
-      -webkit-border-radius: 100px;
-      -moz-border-radius: 100px;
-      border-radius: 100px;
-      background: #c41200;
-      position: absolute;
-      z-index: 0;
-      top: 350px;
-      left: 280px;
-    }
-
-            #circle3 {
-      width: 200px;
-      height: 200px;
-      -webkit-border-radius: 100px;
-      -moz-border-radius: 100px;
-      border-radius: 100px;
-      background: #c41200;
-      position: absolute;
-      z-index: 0;
-      top: 350px;
-      left: 480px;
-    }
-
-            #circle4 {
-      width: 200px;
-      height: 200px;
-      -webkit-border-radius: 100px;
-      -moz-border-radius: 100px;
-      border-radius: 100px;
-      background: #c41200;
-      position: absolute;
-      z-index: 0;
-      top: 350px;
-      left: 680px;
-    }
