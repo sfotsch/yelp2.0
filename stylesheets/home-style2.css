@@ -1,7 +1,7 @@
 body, html{
 	margin: 0;
 	padding: 0;
-	background-color: #aa160b;
+	background-color: white;
 }
 
 .container{
@@ -26,7 +26,7 @@ body, html{
 }
 
 #yelp{
-	
+	width: 300px;
 }
 
 #icon-section{
@@ -71,6 +71,8 @@ textarea:focus, input:focus{
 	margin-right: 10px;
 	padding: 3px 8px 3px 8px;
 	border-radius: 3px;
+	border: solid 3px #aa160b;
+
 }
 
 .input{
@@ -82,6 +84,9 @@ textarea:focus, input:focus{
 	margin-right: 10px;
 	padding: 3px 8px 3px 8px;
 	border-radius: 3px;
+	border-color: #aa160b;
+	border-radius: 3px;
+	border: solid 3px #aa160b;
 }
 
 #submit-button{
@@ -93,7 +98,9 @@ textarea:focus, input:focus{
 	clear: both;
 	margin: 85px auto 0 auto;
 	width: 770px;
-	/*background-color: green;*/
+
+	z-index: 10;
+	position: relative;
 }
 
 .topic:hover{
@@ -129,10 +136,10 @@ textarea:focus, input:focus{
 }
 .label{
 	font-family: 'avenir_next_regularregular';
-	color: white;
+	color: #c41200;
 	float: left;
 	margin: 0 80px 0 0;
-	text-decoration: underline;
+
 }
 
 #nightlife-label{
@@ -143,3 +150,54 @@ textarea:focus, input:focus{
 	margin-right: 135px;
 }
 
+    #circle {
+      width: 200px;
+      height: 200px;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      border-radius: 100px;
+      background: #c41200;
+      position: absolute;
+      z-index: 0;
+      top: 350px;
+      left: 100px;
+    }
+
+        #circle2 {
+      width: 200px;
+      height: 200px;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      border-radius: 100px;
+      background: #c41200;
+      position: absolute;
+      z-index: 0;
+      top: 350px;
+      left: 280px;
+    }
+
+            #circle3 {
+      width: 200px;
+      height: 200px;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      border-radius: 100px;
+      background: #c41200;
+      position: absolute;
+      z-index: 0;
+      top: 350px;
+      left: 480px;
+    }
+
+            #circle4 {
+      width: 200px;
+      height: 200px;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      border-radius: 100px;
+      background: #c41200;
+      position: absolute;
+      z-index: 0;
+      top: 350px;
+      left: 680px;
+    }

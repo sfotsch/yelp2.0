@@ -5,7 +5,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 70px;
+    height: 75px;
     width: 100%;
     background-color: #aa160b; 
 }
@@ -16,7 +16,7 @@
 }
 
 #yelp{
-    width: 80px;
+    width: 110px;
 }
 
 #icon-section{
@@ -35,7 +35,7 @@
     position: fixed;
     top: 13px;
     left: 300px;
-    margin: 0;
+    margin: 10px 0 0 0;
     width: 650px;
     height: 50px;
 }
@@ -83,7 +83,7 @@
     height: 100%; 
     width: 180px; 
     position: fixed;
-    top: 70px;
+    top: 75px;
     left: 0;
     background-color: #aa160b; 
     font-family: 'avenir_next_regularregular';
@@ -97,6 +97,7 @@
     color: #ffffff;
     display: block;
     font-family: 'avenir_next_regularregular';
+    border: solid 2px #6b0d0b;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -104,4 +105,131 @@
     color: #818181;
     cursor: pointer;
     font-family: 'avenir_next_regularregular';
+}
+
+.container{
+    width: 1000px;
+    height: 1000px;
+    left: 180px;
+    top: 70px;
+    position: fixed;
+
+    clear: both;
+}
+
+#business-name{
+    font-family: 'avenir_next_boldbold';
+    margin: 20px 0 0 30px;
+}
+
+#rating{
+    margin: 0 0 0 30px;
+    display: inline-block;
+}
+
+#numratings{
+    font-family: 'avenir_next_regularregular';
+    position: fixed;
+    top: 130px;
+    left: 355px;
+    font-size: 16px;
+    color: #302d2d;
+}
+
+#location-pic{
+    position: fixed;
+    top: 120px;
+    left: 700px;
+    border: 2px solid #aa160b;
+    width: 200px;
+}
+
+.main-info{
+    font-family: 'avenir_next_boldbold';
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 32px;
+}
+
+.main-info li{
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#description-title{
+    margin:0;
+ padding: 0;
+ font-family: 'avenir_next_boldbold';
+ color: #c13e37; 
+}
+
+#description-section{
+    font-family: 'avenir_next_regularregular';
+    float: left;
+    width: 400px;
+    margin: 50px 90px 0 30px;
+    
+}
+
+#description-text{
+    padding: 0;
+    margin: 0;
+}
+
+#hours-section{
+    font-family: 'avenir_next_regularregular';
+    width: 200px;
+    float: left;
+    margin: 50px 0 0 0;
+}
+
+#hours-title{
+ margin:0;
+ padding: 0;
+ font-family: 'avenir_next_boldbold';
+ color: #c13e37;
+}
+
+.hours-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    line-height: 22px;
+}
+
+#info-title{
+       margin:0;
+ padding: 0;
+ font-family: 'avenir_next_boldbold';
+ color: #c13e37;  
+}
+
+#more-info-section{
+    position: fixed;
+    top: 550px;
+    left: 210px;
+}
+
+.info-list{
+    font-family: 'avenir_next_regularregular';
+    font-size: 15px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.info-list li{
+    line-height: 17px;
+}
+
+.p1{
+    display: inline-block;
+    font-family: 'avenir_next_boldbold';
+    margin-right: 5px;
+}
+
+#list2{
+    position: fixed;
+    top: 582px;
+    left: 490px;
 }
