@@ -365,3 +365,7 @@ hr {
     width: 400px;
     margin: 20px 0 0 30px;
 }
+
+textarea:focus, input:focus{
+    outline: none;
+}
