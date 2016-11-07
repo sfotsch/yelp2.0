@@ -18,6 +18,7 @@
                 document.getElementById(tags[x]).style.display = 'none';
             }
             document.getElementById(ht).style.display = 'block';
+
         }
         function submitReview() {
             document.getElementById('write-review').style.display = 'none';
@@ -27,10 +28,10 @@
     <title>Yelp: Cafe at the Overlook</title>
 </head>
 <body>
-
+<div class="full-screen">
 	<div id="header">
 			<div id="yelp-section">
-				<img id="yelp" src="images/yelp3.png">
+				<a href="index.html"><img id="yelp" src="images/yelp3.png"></a>
 			</div>
 			<div id=search-section>
 		<form>
@@ -62,7 +63,7 @@
         </div>
 		<ul id="main-info" class="main-info">
 			<li>(574) 271-3727</li>
-			<li>cafeoverlook.com</li>
+			<li id="link" onclick="http://www.cafeoverlook.com/">cafeoverlook.com</li>
 			<li>54721 Burdette Road</li>
 			<li>South Bend, IN 26637</li>
 			<li>Open Now</li>
@@ -105,6 +106,7 @@
 			<li><div class="p1">Good For</div>Brunch</li>
 			<li><div class="p1">Parking</div>Private Lot</li>
 			<li><div class="p1">Wheelechair Accesible</div>Yes</li>
+            </ul>
 		</div>
 		<ul class="info-list" id="list2">
 			<li><div class="p1">Attire</div>Casual</li>
@@ -113,6 +115,7 @@
 			<li><div class="p1">Dogs Allowed</div>Yes</li>
 			<li><div class="p1">Caters</div>No</li>
 			<li><div class="p1">Good for Working</div>Yes</li>
+            </ul>
 		</div>
 	</div>
     </div>
@@ -267,5 +270,6 @@
         <h1 class="subtitle">Similar</h1>
     </div>
 
+</div>
 </body>
 </html>
