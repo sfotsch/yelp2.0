@@ -294,6 +294,12 @@ padding: 0;
     margin: 10px 0 0 100px;
 }
 
+#review-title{
+    font-family: 'avenir_next_regularregular';
+    font-size: 15px;
+    margin: 0 0 0 30px;
+}
+
 #review-input{
     width: 500px;
     height: 50px;
