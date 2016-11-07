@@ -1,0 +1,115 @@
+body{
+    font-family: 'avenir_next_regularregular';
+}
+.rating{
+    width: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+.postFront{
+    width: 180px;
+    float: left;
+    height: 150px;
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+}
+.postImage{
+    width: 100%;
+    display: inline-block;
+    height: auto;
+    vertical-align: middle;
+}
+
+.postDescription{
+    font-size: small;
+    margin: 0;
+}
+
+.price{
+   font-family: 'avenir_next_boldbold';
+   display: inline-block;
+   font-size: small; 
+}
+
+.distance{
+    color: #2f398e;
+    text-decoration: underline;
+    font-size: small;
+}
+
+.postTitle{
+    font-family: 'avenir_next_boldbold';
+    font-size: medium;
+    margin-bottom: 0;
+}
+
+.description{
+    padding: 0;
+    margin: 0 0 0 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: x-small;
+    display: inline;
+}
+
+h3{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+.postText{
+    width: 300px;
+    padding-left: 2%;
+    float: left;
+}
+
+.postAddress{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 50px;
+}
+
+.newPost{
+    width: 700px;
+    margin: 0;
+    position: relative;
+    clear: both;
+}
+
+.hr{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+    color: darkblue;
+    cursor: pointer;
+}
+
+label{
+    font-size: small;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.bubbleForm{
+    font-size: small;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.Content{
+    margin-top: 10px;
+    padding-left: 5%;
+    padding-right: 8%;
+    padding-top: 0;
+}

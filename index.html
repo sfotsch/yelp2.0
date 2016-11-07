@@ -10,7 +10,13 @@
 <body>
 
 <div class="container">
-
+<article id="auth-area">
+    <article id="auth-buttons">
+        <button id="login-button">Log In</button>
+        <p id="linedetail">|</p>
+        <button id="signup-button">Sign Up</button>
+    </article>
+</article>
 	<div id="title-section">
 		<div id="yelp-section">
 			<img id="yelp" src="images/yelp3.png">
@@ -28,25 +34,20 @@
 			<div id="location-section">
 				<p id="near">Near</p><input class="input" type="text" name="location" placeholder="location">
 			</div>
-		<input id="submit-button" type="submit">
+		<button id="search-button" onclick="search.html" type="submit"><img id="search-pic" src="images/search.png"></button>
 		</form>
 	</div>
 
-<div id="circle"></div>
-<div id="circle2"></div>
-<div id="circle3"></div>
-<div id="circle4"></div>
 	<div id="topic-section">
 
 
-		<img class="topic" id="restaurant-pic" src="images/food-pic.png">
+		<a href="search.html"><img class="topic" id="restaurant-pic" src="images/food.png"></a>
 
+		<a href="search.html"><img class="topic" id="shopping-pic" src="images/shop.png"></a>
 
-		<img class="topic" id="shopping-pic" src="images/shopping-pic.png">
+		<a href="search.html"><img class="topic" id="nightlife-pic" src="images/nightlife.png"></a>
 
-		<img class="topic" id="nightlife-pic" src="images/nightlife-pic.png">
-
-		<img class="topic" id="more-pic" src="images/more-pic.png">
+		<a href="search.html"><img class="topic" id="more-pic" src="images/more.png"></a>
 
 	</div>
 
