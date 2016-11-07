@@ -29,6 +29,18 @@ body{
     margin: 0;
 }
 
+.price{
+   font-family: 'avenir_next_boldbold';
+   display: inline-block;
+   font-size: small; 
+}
+
+.distance{
+    color: #2f398e;
+    text-decoration: underline;
+    font-size: small;
+}
+
 .postTitle{
     font-family: 'avenir_next_boldbold';
     font-size: medium;
