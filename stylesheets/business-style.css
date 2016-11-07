@@ -379,6 +379,11 @@ hr {
     margin: 10px;
 }
 
+.food{
+    height: 200px;
+    margin: 20px 0 0 30px;
+}
+
 .menu{
     width: 400px;
     margin: 20px 0 0 30px;
