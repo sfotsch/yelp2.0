@@ -476,3 +476,85 @@ textarea:focus, input:focus{
     margin-right: auto;
     min-height: 10pt;
 }
+
+.postFront{
+    font-family: 'avenir_next_regularregular';
+    width: 180px;
+    float: left;
+    height: 150px;
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+}
+.postImage{
+    font-family: 'avenir_next_regularregular';
+    width: 100%;
+    display: inline-block;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 30px;
+}
+
+.postDescription{
+    font-family: 'avenir_next_regularregular';
+    font-size: small;
+    margin: 0;
+}
+
+.price{
+   font-family: 'avenir_next_boldbold';
+   display: inline-block;
+   font-size: small; 
+}
+
+.distance{
+    font-family: 'avenir_next_regularregular';
+    color: #2f398e;
+    text-decoration: underline;
+    font-size: small;
+}
+
+.postTitle{
+    font-family: 'avenir_next_boldbold';
+    font-size: medium;
+    margin-bottom: 0;
+}
+
+.description{
+    font-family: 'avenir_next_regularregular';
+    padding: 0;
+    margin: 0 0 0 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: x-small;
+    display: inline;
+}
+
+.postText{
+    font-family: 'avenir_next_regularregular';
+    width: 300px;
+    padding-left: 2%;
+    float: left;
+}
+
+.postAddress{
+    font-family: 'avenir_next_regularregular';
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 50px;
+}
+
+.newPost{
+    font-family: 'avenir_next_regularregular';
+    width: 700px;
+    margin: 0;
+    position: relative;
+    clear: both;
+}
+.post-rating{
+    width: 100px;
+}
