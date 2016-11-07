@@ -249,17 +249,13 @@
 }
 
 #review-input{
-    position: absolute;
     width: 500px;
     height: 50px;
-    top: 210px;
-    left: 210px;
+    margin: 0 0 0 30px;
 }
 
-.submit-review{
-    position: absolute;
-    top: 270px;
-    left: 650px;
+#submit-review{
+    margin: 0 0 0 480px;
 }
 
 #submitted-review{
