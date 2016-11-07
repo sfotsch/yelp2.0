@@ -1,3 +1,7 @@
+body{
+margin: 0;
+padding: 0;
+}
 
 #header{
     margin: 0;
@@ -109,11 +113,10 @@
 
 .container{
     width: 1000px;
-    height: 1000px;
+    height: 100%;
     left: 180px;
     top: 70px;
     position: absolute;
-
     clear: both;
 }
 
@@ -135,31 +138,53 @@
     display: inline-block;
 }
 
+#rating-section{
+    clear: both;
+}
+
 .rating{
-    font-family: 'avenir_next_regularregular';
-    margin: 0 0 0 30px;
+    margin: 0 5px 0 30px;
     display: inline-block;
+    float: left;
+    font-family: 'avenir_next_regularregular';
 }
 
 .numratings{
     font-family: 'avenir_next_regularregular';
-    position: absolute;
-    top: 130px;
-    left: 355px;
+    color: gray;
+    position: block;
+    display: inline-block;
     font-size: 16px;
-    color: #302d2d;
+    margin: 2px 0 0 0;
+    padding: 0;
+}
+
+#top-section{
+    clear: both;
+    width: 800px;
+ 
+}
+
+.left-section{
+    float: left;
+    width: 420px;
+    display: inline-block;
+}
+
+#locationpic-section{
+    display: inline-block;
+    margin: -30px 0 0 0;
+    width: 200px;
 }
 
 #location-pic{
-    position: absolute;
-    top: 120px;
-    left: 700px;
     border: 2px solid #aa160b;
     width: 200px;
 }
 
 .main-info{
     font-family: 'avenir_next_boldbold';
+    display: block;
     list-style-type: none;
     padding: 0;
     margin: 10px 0 0 32px;
@@ -180,12 +205,13 @@
 #description-section{
     font-family: 'avenir_next_regularregular';
     float: left;
-    width: 400px;
-    margin: 50px 90px 0 30px;
+    width: 320px;
+    margin: 30px 90px 0 30px;
     
 }
 
 #description-text{
+    width: 350px;
     padding: 0;
     margin: 0;
 }
@@ -194,7 +220,7 @@
     font-family: 'avenir_next_regularregular';
     width: 200px;
     float: left;
-    margin: 50px 0 0 0;
+    margin: 30px 0 0 0;
 }
 
 #hours-title{
@@ -219,17 +245,30 @@
 }
 
 #more-info-section{
-    position: absolute;
-    top: 550px;
-    left: 210px;
+    display: block;
+    width: 700px;
+    margin: 0 0 0 30px;
+}
+
+.middle-section{
+    margin: 0;
+    width: 800px;
+    display: block;
+    height: 220px;
+}
+
+.bottom-section{
+    display: block;
+    clear: both;
 }
 
 .info-list{
     font-family: 'avenir_next_regularregular';
     font-size: 15px;
     list-style-type: none;
-    margin: 0;
+    margin: 10px 0 0 3px;
     padding: 0;
+    float: left;
 }
 
 .info-list li{
@@ -243,9 +282,8 @@
 }
 
 #list2{
-    position: absolute;
-    top: 582px;
-    left: 490px;
+    display: inline-block;
+    margin: 10px 0 0 100px;
 }
 
 #review-input{
