@@ -128,6 +128,18 @@
     <div id="photos" class="container" style="display:none;">
 		<h1 class="business-name">Cafe at the Overlook</h1>
         <h1 class="subtitle">Photos</h1>
+        <br>
+        <img class="food" src="images/food1.jpg">
+        <img class="food" src="images/food2.jpg">
+        <img class="food" src="images/food3.jpg">
+        <br>
+        <img class="food" src="images/food4.jpg">
+        <img class="food" src="images/food5.jpg">
+        <img class="food" src="images/food6.jpg">
+        <br>
+        <img class="food" src="images/food7.jpg">
+        <img class="food" src="images/food8.jpg">
+        <img class="food" src="images/food9.jpg">
     </div>
     <div id="reviews" class="container" style="display:none;">
 		<h1 class="business-name">Cafe at the Overlook</h1>
@@ -138,14 +150,13 @@
             <p class="numratings">70 Reviews</p>
         </div>
         <br>
-        <form>
+        <form id="write-review">
             <h3 id="review-title">How would you rate this business?</h3>
             <br>
             <input id="review-input" type="text" name="review" placeholder=
             "Your review helps others learn about great local businesses.">
             <br>
-            <input id="submit-review" class="submit-review"
-            type="submit" onclick="submitReview()">
+            <input id="submit-review" type="submit" onclick="submitReview()">
         </form>
         <div id="review-submitted" style="display:none;">
             <h3 id="submitted-review">Thanks for your review!</h3>
@@ -155,7 +166,12 @@
             <div class="review-user">
                 <img class="review-pic" src="images/john.jpg">
                 <p class="review-name">John R.</p>
+                <p class="review-num">5870000001 Reviews</p>
                 <img class="review-rating" src="images/rating.png">
+                <p class="review-num">0 users found this review useful...</p>
+                <p class="review-num">Did you?</p>
+                <button class="review-btn" onclick="reviewLike()">Useful</button>
+                <button class="review-btn" onclick="reviewDislike()">Not Useful</button>
             </div>
             <p class="review-text">Cheery, cozy, unpretentious cafe serving delicious breakfast at
             criminally underpriced rates. We visited this place on a trip to
@@ -191,7 +207,12 @@
             <div class="review-user">
                 <img class="review-pic" src="images/shawn.jpg">
                 <p class="review-name">Shawn F.</p>
+                <p class="review-num">5870 Reviews</p>
                 <img class="review-rating" src="images/rating.png">
+                <p class="review-num">2873 users found this review useful...</p>
+                <p class="review-num">Did you?</p>
+                <button class="review-btn" onclick="reviewLike()">Useful</button>
+                <button class="review-btn" onclick="reviewDislike()">Not Useful</button>
             </div>
             <p class="review-text">
             A small breakfast spot in a college housing area, I'm into it, even
@@ -218,7 +239,12 @@
             <div class="review-user">
                 <img class="review-pic" src="images/jenna.jpg">
                 <p class="review-name">Jenna W.</p>
+                <p class="review-num">587 Reviews</p>
                 <img class="review-rating" src="images/rating.png">
+                <p class="review-num">100030 users found this review useful...</p>
+                <p class="review-num">Did you?</p>
+                <button class="review-btn" onclick="reviewLike()">Useful</button>
+                <button class="review-btn" onclick="reviewDislike()">Not Useful</button>
             </div>
             <p class="review-text">
              I was in Southbend this weekend for a wedding, and needed to find a

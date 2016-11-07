@@ -307,7 +307,7 @@ padding: 0;
 }
 
 #submit-review{
-    margin: 0 0 0 480px;
+    margin: 10px 0 0 480px;
 }
 
 #submitted-review{
@@ -319,6 +319,7 @@ padding: 0;
 .review{
     clear: both;
     width: 800px;
+    margin-bottom: 10px;
 }
 
 .review-user{
@@ -340,6 +341,20 @@ padding: 0;
     text-align: center;
 }
 
+.review-num{
+    font-family: 'avenir_next_regularregular';
+    font-size: 10px;
+    margin: 0 0 0 30px;
+    width: 100px;
+    text-align: center;
+}
+
+.review-btn{
+    width: 100px;
+    text-align: center;
+    margin: 0 0 0 30px;
+}
+
 .review-rating{
     width: 100px;
     margin: 0 0 0 30px;
@@ -355,6 +370,12 @@ padding: 0;
 
 hr {
     margin: 10px;
+}
+
+.food{
+    height: 200px;
+    width: 200px;
+    margin: 10px 0 10px 30px;
 }
 
 .menu{
