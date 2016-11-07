@@ -440,3 +440,39 @@ textarea:focus, input:focus{
     padding: 10px 0px 10px 10px;
     margin-bottom: 20px;
 }
+
+#auth-area {
+    position:absolute;
+    top:0;
+    right:0;
+    margin-top: 10px;
+    margin-right: 15px;
+    width: auto;
+    z-index: 10;
+}
+
+#auth-buttons, #auth-form {
+    min-height: 0px;
+    margin-bottom: 15px;
+    font-size: small;
+}
+
+#linedetail{
+    display: inline-block;
+    color: white;
+
+}
+
+#login-button, #signup-button, #logout-button, #username {
+    background-color: transparent;
+    font-weight: 400;
+    border: none;
+    font-family: 'avenir_next_regularregular';
+    display: inline-block;
+    color: gray;
+    font-size: small;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 10pt;
+}
