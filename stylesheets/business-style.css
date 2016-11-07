@@ -162,7 +162,6 @@ display:block;
     margin: 0 5px 0 30px;
     display: inline-block;
     float: left;
-    font-family: 'avenir_next_regularregular';
 }
 
 .numratings{
@@ -302,10 +301,21 @@ display:block;
     margin: 5px 0 0 90px;
 }
 
+#get-rating{
+    clear: both;
+}
+
 #review-title{
     font-family: 'avenir_next_regularregular';
     font-size: 15px;
     margin: 0 0 0 30px;
+    display: inline-block;
+    float: left;
+}
+
+#review-rating{
+    margin: 0 0 0 100px;
+    display: inline-block;
 }
 
 #review-input{
