@@ -5,7 +5,26 @@
     <link rel="stylesheet" href="stylesheets/business-style.css">
     <link href="assets/webfontkit-Avenir/stylesheetAvenir.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="images/icon.png">
-    <title>Title</title>
+    <script type="text/javascript">
+        function changeTag(ht) {
+            var tags = [
+                    'business',
+                    'menu',
+                    'photos',
+                    'reviews',
+                    'similar'
+                ];
+            for ( var x = 0; x < tags.length; x++ ) {
+                document.getElementById(tags[x]).style.display = 'none';
+            }
+            document.getElementById(ht).style.display = 'block';
+        }
+        function submitReview() {
+            document.getElementById('write-review').style.display = 'none';
+            document.getElementById('review-submitted').style.display = 'block';
+        }
+    </script>
+    <title>Yelp: Cafe at the Overlook</title>
 </head>
 <body>
 
@@ -27,15 +46,15 @@
 	</div>
 
 	<div id="sidenav" class="sidenav">
-		<a href="#">Business</a>
-		<a href="#">Menu</a>
-		<a href="#">Photos</a>
-		<a href="#">Reviews</a>
-		<a href="#">Similar</a>
+		<a onclick="changeTag('business');" href="#business">Business</a>
+		<a onclick="changeTag('menu');" href="#menu">Menu</a>
+		<a onclick="changeTag('photos');" href="#photos">Photos</a>
+		<a onclick="changeTag('reviews');" href="#reviews">Reviews</a>
+		<a onclick="changeTag('similar');" href="#similar">Similar</a>
 	</div>
-	<div class="container">
+	<div id="business" class="container">
 		<h1 id="business-name">Cafe at the Overlook</h1>
-		<img id="rating" src="images/rating.png"><p id="numratings">70 Reviews</p>
+		<img class="rating" src="images/rating.png"><p class="numratings">70 Reviews</p>
 		<ul id="main-info" class="main-info">
 			<li>(574) 271-3727</li>
 			<li>cafeoverlook.com</li>
@@ -48,7 +67,8 @@
 
 		<div id="description-section">
 			<h3 id="description-title">Description</h3>
-			<p id="description-text">Opened last January, the Café at the Overlook at Notre Dame is a casually-eclectic and cozy café with a fresh, trendy menu updated often to offer the season’s freshest ingredients.</p>
+			<p id="description-text">Opened last January, the Café at the
+			Overlook at Notre Dame is a casually-electric and cozy café with a fresh, trendy menu updated often to offer the season’s freshest ingredients.</p>
 		</div>
 
 
@@ -83,6 +103,98 @@
 			<li><div class="p1">Good for Working</div>Yes</li>
 		</div>
 	</div>
+    <div id="menu" class="container" style="display:none;">
+        <h1 class="business-name">Cafe at the Overlook</h1>
+        <h1 class="subtitle">Menu</h1>
+    </div>
+    <div id="photos" class="container" style="display:none;">
+		<h1 class="business-name">Cafe at the Overlook</h1>
+        <h1 class="subtitle">Photos</h1>
+    </div>
+    <div id="reviews" class="container" style="display:none;">
+		<h1 class="business-name">Cafe at the Overlook</h1>
+        <h1 class="subtitle">Reviews</h1>
+        <br>
+		<img class="rating" src="images/rating.png"><p class="numratings">70 Reviews</p>
+        <br>
+        <form id="write-review">
+            <h3 class="rating">How would you rate this business?</h3>
+            <br>
+            <input id="review-input" type="text" name="review" placeholder=
+            "Your review helps others learn about great local businesses.">
+            <input id="submit-review" class="submit-review"
+            type="submit" onclick="submitReview()">
+        </form>
+        <div id="review-submitted" style="display:none;">
+            <h3 id="submitted-review">Thanks for your review!</h3>
+        </div>
+        <div class="review" style="margin-top:100px;">
+            <hr>
+            <div class="review-user">
+                <img class="review-pic" src="images/john.jpg">
+                <p class="review-name">John R.</p>
+                <img class="review-rating" src="images/rating.png">
+            </div>
+            <p class="review-text">Cheery, cozy, unpretentious cafe serving delicious breakfast at
+            criminally underpriced rates. We visited this place on a trip to
+            South Bend, and it was one of those culinary diamonds in the rough
+            located in a pretty nondescript setting.
+            The staff is pleasant without being too chatty, and very efficient. 
+            
+            Even though we went on a Sunday morning, we had no problem getting a
+            huge corner booth (there were 7 of us) without a waiting time. I'm
+            guessing the place was not as full as it normally is, since the
+            college students must be on their summer vacations.</p>
+        </div>
+        <div class="review">
+            <hr>
+            <div class="review-user">
+                <img class="review-pic" src="images/shawn.jpg">
+                <p class="review-name">Shawn F.</p>
+                <img class="review-rating" src="images/rating.png">
+            </div>
+            <p class="review-text">
+            A small breakfast spot in a college housing area, I'm into it, even
+            though there were a few times when I felt old as hell! 
+
+            This cozy cafe is a great stop for a quick bite and a study session.
+            There's seating both inside and outside, but I opted to dine inside
+            so I could use my laptop without the sunny glare. The menu is
+            written on the wall and has tons of great options for breakfast and
+            lunch. I went with the build your bfast sandwich option. 
+            </p>
+        </div>
+        <div class="review">
+            <hr>
+            <div class="review-user">
+                <img class="review-pic" src="images/jenna.jpg">
+                <p class="review-name">Jenna W.</p>
+                <img class="review-rating" src="images/rating.png">
+            </div>
+            <p class="review-text">
+             was in Southbend this weekend for a wedding, and needed to find a
+             place where I could get food and coffee and find a quiet corner to
+             study. Thankfully, Cafe at the Overlook served all three purposes!
+             I loved the place so much I even took my parents back later that
+             weekend after all the wedding festivities had ended! It definitely
+             beat paying for overpriced food at the bistro next door.
+
+             I tried the Jerk Panini and also the BBQ Pork sandwich. The first
+             with a side of soup and the second with a side of salad. Both were
+             delicious options and super reasonably priced for a filling meal
+             ($10 with the add-on side). The pulled pork sandwich was pretty
+             standard, nothing spectacular. However, I found the Jerk Panini to
+             be very unique. It is served with mango mayo and banana smear which
+             really gives it a tropical flavor! It also doesn't hurt that it
+             comes with a healthy serving of bacon as well. :) 
+
+            </p>
+        </div>
+    </div>
+    <div id="similar" class="container" style="display:none;">
+		<h1 class="business-name">Cafe at the Overlook</h1>
+        <h1 class="subtitle">Similar</h1>
+    </div>
 
 </body>
 </html>

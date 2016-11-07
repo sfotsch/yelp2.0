@@ -2,7 +2,7 @@
 #header{
     margin: 0;
     padding: 0;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     height: 75px;
@@ -32,7 +32,7 @@
 
 #search-section{
     clear: both;
-    position: fixed;
+    position: absolute;
     top: 13px;
     left: 300px;
     margin: 10px 0 0 0;
@@ -47,7 +47,7 @@
     font-family: 'avenir_next_boldbold';
 }
 
-#location-section, #find-section{
+#location-section, #find-section, #write-review{
     background-color: white;
     width: 250px;
     display: inline;
@@ -72,7 +72,7 @@
     border-radius: 3px;
 }
 
-#submit-button{
+#submit-button, #submit-review{
     font-family: 'avenir_next_regularregular';
     margin-top: 8px;
 }
@@ -82,7 +82,7 @@
 .sidenav {
     height: 100%; 
     width: 180px; 
-    position: fixed;
+    position: absolute;
     top: 75px;
     left: 0;
     background-color: #aa160b; 
@@ -101,7 +101,7 @@
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover, .offcanvas a:focus{
+.sidenav a:hover, .offcanvas a:focus {
     color: #818181;
     cursor: pointer;
     font-family: 'avenir_next_regularregular';
@@ -112,7 +112,7 @@
     height: 1000px;
     left: 180px;
     top: 70px;
-    position: fixed;
+    position: absolute;
 
     clear: both;
 }
@@ -122,14 +122,28 @@
     margin: 20px 0 0 30px;
 }
 
-#rating{
+.business-name{
+    font-family: 'avenir_next_boldbold';
+    margin: 20px 0 0 30px;
+    display: inline-block;
+}
+
+.subtitle{
+    font-family: 'avenir_next_boldbold';
+    margin: 0 0 0 10px;
+    color: #c13e37;
+    display: inline-block;
+}
+
+.rating{
+    font-family: 'avenir_next_regularregular';
     margin: 0 0 0 30px;
     display: inline-block;
 }
 
-#numratings{
+.numratings{
     font-family: 'avenir_next_regularregular';
-    position: fixed;
+    position: absolute;
     top: 130px;
     left: 355px;
     font-size: 16px;
@@ -137,7 +151,7 @@
 }
 
 #location-pic{
-    position: fixed;
+    position: absolute;
     top: 120px;
     left: 700px;
     border: 2px solid #aa160b;
@@ -158,9 +172,9 @@
 
 #description-title{
     margin:0;
- padding: 0;
- font-family: 'avenir_next_boldbold';
- color: #c13e37; 
+    padding: 0;
+    font-family: 'avenir_next_boldbold';
+    color: #c13e37; 
 }
 
 #description-section{
@@ -184,10 +198,10 @@
 }
 
 #hours-title{
- margin:0;
- padding: 0;
- font-family: 'avenir_next_boldbold';
- color: #c13e37;
+    margin:0;
+    padding: 0;
+    font-family: 'avenir_next_boldbold';
+    color: #c13e37;
 }
 
 .hours-list{
@@ -198,14 +212,14 @@
 }
 
 #info-title{
-       margin:0;
- padding: 0;
- font-family: 'avenir_next_boldbold';
- color: #c13e37;  
+    margin:0;
+    padding: 0;
+    font-family: 'avenir_next_boldbold';
+    color: #c13e37;  
 }
 
 #more-info-section{
-    position: fixed;
+    position: absolute;
     top: 550px;
     left: 210px;
 }
@@ -229,7 +243,68 @@
 }
 
 #list2{
-    position: fixed;
+    position: absolute;
     top: 582px;
     left: 490px;
+}
+
+#review-input{
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    top: 210px;
+    left: 210px;
+}
+
+.submit-review{
+    position: absolute;
+    top: 270px;
+    left: 650px;
+}
+
+#submitted-review{
+    font-family: 'avenir_next_boldbold';
+    color: #c13e37; 
+    margin: 20px 0 0 30px;
+}
+
+.review{
+    clear: both;
+    width: 800px;
+}
+
+.review-user{
+    float: left;
+    width: 100px;
+}
+
+.review-pic{
+    width: 100px;
+    height: 100px;
+    margin: 0 0 0 30px;
+    display: inline-block;
+}
+
+.review-name{
+    font-family: 'avenir_next_boldbold';
+    margin: 0 0 0 30px;
+    width: 100px;
+    text-align: center;
+}
+
+.review-rating{
+    width: 100px;
+    margin: 0 0 0 30px;
+}
+
+.review-text{
+    font-family: 'avenir_next_regularregular';
+    font-size: 15px;
+    margin: 0 0 0 50px;
+    width: 400px;
+    display: inline-block;
+}
+
+hr {
+    margin: 10px;
 }
