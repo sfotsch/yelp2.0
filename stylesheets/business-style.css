@@ -558,3 +558,8 @@ textarea:focus, input:focus{
 .post-rating{
     width: 100px;
 }
+#login-button:hover, #login-button:focus, #signup-button:hover, #signup-button:focus,
+#logout-button:hover, #logout-button:focus{
+    color: red;
+    cursor: pointer;
+}
