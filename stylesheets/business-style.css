@@ -1,6 +1,7 @@
-body{
+body, html{
 margin: 0;
 padding: 0;
+min-height: 100%;
 }
 
 #header{
@@ -92,13 +93,15 @@ padding: 0;
 
 /* The side navigation menu */
 .sidenav {
-    height: 100%; 
+    min-height: 100%;
     width: 180px; 
-    position: absolute;
+    position:absolute; 
+    display:block;
     top: 75px;
     left: 0;
     background-color: #aa160b; 
     font-family: 'avenir_next_regularregular';
+    margin: 0;
 }
 
 /* The navigation menu links */
@@ -121,11 +124,12 @@ padding: 0;
 
 .container{
     width: 1000px;
-    height: 100%;
+    min-height: 100%;
     left: 180px;
     top: 70px;
     position: absolute;
     clear: both;
+    overflow: hidden;
 }
 
 #business-name{
@@ -291,7 +295,7 @@ padding: 0;
 
 #list2{
     display: inline-block;
-    margin: 5px 0 0 100px;
+    margin: 5px 0 0 90px;
 }
 
 #review-title{
@@ -358,6 +362,6 @@ hr {
 }
 
 .menu{
-    height: 110%;
+    width: 400px;
     margin: 20px 0 0 30px;
 }
