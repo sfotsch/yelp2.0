@@ -350,3 +350,8 @@ padding: 0;
 hr {
     margin: 10px;
 }
+
+.menu{
+    height: 110%;
+    margin: 20px 0 0 30px;
+}
