@@ -188,7 +188,7 @@ display:block;
 
 #locationpic-section{
     display: inline-block;
-    margin: -30px 0 0 0;
+    margin: -50px 0 0 40px;
     width: 200px;
 }
 
@@ -225,13 +225,13 @@ display:block;
 #description-section{
     font-family: 'avenir_next_regularregular';
     float: left;
-    width: 370px;
+    width: 420px;
     margin: 0 90px 0 30px;
-    
+    display: inline-block;
 }
 
 #description-text{
-    width: 350px;
+    width: 400px;
     padding: 0;
     margin: 0;
 }
@@ -239,8 +239,8 @@ display:block;
 #hours-section{
     font-family: 'avenir_next_regularregular';
     width: 200px;
-    float: left;
-    margin: 30px 0 0 0;
+    margin: 0 0 0 -25px;
+    display: inline-block;
 }
 
 #hours-title{
@@ -275,6 +275,7 @@ display:block;
     width: 1000px;
     display: block;
     height: 220px;
+    clear: both;
 }
 
 .bottom-section{
@@ -303,7 +304,7 @@ display:block;
 
 #list2{
     display: inline-block;
-    margin: 5px 0 0 90px;
+    margin: 5px 0 0 30px;
 }
 
 #get-rating{
