@@ -476,3 +476,9 @@ textarea:focus, input:focus{
     margin-right: auto;
     min-height: 10pt;
 }
+
+#login-button:hover, #login-button:focus, #signup-button:hover, #signup-button:focus,
+#logout-button:hover, #logout-button:focus{
+    color: red;
+    cursor: pointer;
+}
