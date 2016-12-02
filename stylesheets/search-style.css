@@ -1,5 +1,4 @@
-
-#header{
+#header {
     margin: 0;
     padding: 0;
     position: absolute;
@@ -27,10 +26,9 @@
     font-size: small;
 }
 
-#linedetail{
+#linedetail {
     display: inline-block;
     color: white;
-
 }
 
 #login-button, #signup-button, #logout-button, #username {
@@ -48,32 +46,32 @@
 }
 
 #login-button:hover, #login-button:focus, #signup-button:hover, #signup-button:focus,
-#logout-button:hover, #logout-button:focus{
+#logout-button:hover, #logout-button:focus {
     color: red;
     cursor: pointer;
 }
 
-#yelp-section{
+#yelp-section {
     margin: 10px 0 0 180px;
     float: left;
 }
 
-#yelp{
+#yelp {
     width: 110px;
 }
 
-#icon-section{
+#icon-section {
     width: 30px;
     float: left;
     margin: 10px -5px 0 0;
 }
 
-#icon{
+#icon {
     width: 100%;
     margin: 0 0 0 0;
 }
 
-#search-section{
+#search-section {
     clear: both;
     position: absolute;
     top: 13px;
@@ -84,39 +82,39 @@
 } 
 
 
-#find, #near{
+#find, #near {
     margin: 0 10px 0 0;
     padding: 0;
     display: inline;
     font-family: 'avenir_next_boldbold';
 }
 
-#location-section, #find-section{
+#location-section, #find-section {
     background-color: white;
     width: 250px;
     display: inline;
 }
 
 
-#find-section{
+#find-section {
     float: left;
     margin-right: 10px;
     padding: 3px 8px 3px 8px;
     border-radius: 3px;
 }
 
-.input{
+.input {
     border: none;
 }
 
-#location-section{
+#location-section {
     float: left;
     margin-right: 10px;
     padding: 3px 8px 3px 8px;
     border-radius: 3px;
 }
 
-#search-button{
+#search-button {
     font-family: 'avenir_next_regularregular';
     margin-top: 1px;
     background-color: #aa160b;
@@ -126,54 +124,53 @@
     padding-bottom: 0;
 }
 
-#search-pic{
+#search-pic {
     width: 20px;
 }
 
-#wrapper{
+#wrapper {
     clear: both;
     width: 1090px;
 }
 
-#container{
+#container {
     width: 700px;
     margin: 80px auto 0 150px;
     float: left;
     display: inline-block;
 }
 
-#ads{
+#ads {
     width: 200px;
     height: 600px;
     margin: 80px 0 0 30px;
     display: inline-block;
 }
 
-#sponsor{
+#sponsor {
     color: gray;
     font-size: small;
     margin: 20px 0 20px 0;
 }
 
-.ad-title{
+.ad-title {
     margin: 0;
     padding: 0;
 }
 
-.ad-pic{
+.ad-pic {
     margin: -10px 0 0 0;
     padding: 0;
     width: 90px;
 }
 
-.ad{
+.ad {
     border: 1px solid lightgray;
-
     width: 160px;
     padding: 10px 0px 10px 10px;
     margin-bottom: 20px;
 }
 
-textarea:focus, input:focus{
+textarea:focus, input:focus {
     outline: none;
 }

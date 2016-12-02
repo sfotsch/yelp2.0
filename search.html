@@ -1,139 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="stylesheets/search-style.css">
-    <link rel="stylesheet" href="stylesheets/posts.css">
-    <link href="assets/webfontkit-Avenir/stylesheetAvenir.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="images/icon.png">
-    <title>Search</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="stylesheets/search-style.css">
+        <link rel="stylesheet" href="stylesheets/posts.css">
+        <link href="assets/webfontkit-Avenir/stylesheetAvenir.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="images/icon.png">
+        <title>Search</title>
+        <script src="https://use.fontawesome.com/ee3df41006.js"></script>
+    </head>
+    <body>
+        <!-- user authentication -->
+        <article id="auth-area">
+            <article id="auth-buttons">
+            <button id="login-button">Log In</button>
+            <p id="linedetail">|</p>
+            <button id="signup-button">Sign Up</button>
+            </article>
+        </article>
 
-<article id="auth-area">
-    <article id="auth-buttons">
-        <button id="login-button">Log In</button>
-        <p id="linedetail">|</p>
-        <button id="signup-button">Sign Up</button>
-    </article>
-</article>
+        <!-- top bar -->
+        <div id="header">
+            </article>
+            <div id="yelp-section">
+                <a href="index.html"><img id="yelp" src="images/yelp3.png"></a>
+            </div>
+            <div id=search-section>
+                <form>
+                    <div id="find-section">
+                        <p id ="find">Find</p><input class="input" type="text" name="find" placeholder="tacos, cheap dinner, Max's">
+                    </div>
+                    <div id="location-section">
+                        <p id="near">Near</p><input class="input" type="text" name="location" placeholder="location">
+                    </div>
+                    <button id="search-button"><img id="search-pic" src="images/search.png">
+                </form>
+                <article id="auth-area">
+            </div>
+        </div>
 
-	<div id="header">
-</article>
-			<div id="yelp-section">
-				<a href="index.html"><img id="yelp" src="images/yelp3.png"></a>
-			</div>
-			<div id=search-section>
-		<form>
-			<div id="find-section">
-				<p id ="find">Find</p><input class="input" type="text" name="find" placeholder="tacos, cheap dinner, Max's">
-			</div>
-			<div id="location-section">
-				<p id="near">Near</p><input class="input" type="text" name="location" placeholder="location">
-			</div>
-			<button id="search-button"><img id="search-pic" src="images/search.png">
-		</form>
-			<article id="auth-area">
+        <!-- search results -->
+        <div id="wrapper">
+            <div id="container">
+                <div class='newPost'>
+                    <hr>
+                    <div class='postFront'>
+                        <a href="business.html"><img class='postImage' src="images/Cafe4.jpg"></a>
+                    </div>
+                    <div class='postText'>
+                        <a href="business.html"><h2 class='postTitle'>Cafe at the Overlook</h2></a>
+                        <h4>
+                            Coffee & Tea, Bakeries, American (New)
+                            <br>
+                            $ - Price range: Under $10
+                            <br>
+                            <a href="business.html#business"
+                                class='postLinks'>About</a>
+                            -
+                            <a href="business.html#menu"
+                                class='postLinks'>Menu</a>
+                            -
+                            <a href="business.html#photos" 
+                                class='postLinks'>Photos</a>
+                            -
+                            <a href="business.html#reviews"
+                                class='postLinks'>Reviews</a>
+                        </h4>
+                    </div>
+                    <div id="r" class='postRating'>
+                        <img class="rating" src="images/rating.png">
+                        <i class="fa fa-sort-desc" aria-hidden="true"
+                            style="vertical-align:top;"></i>
+                        <br>
+                        <img class='ratingDist' src="images/r1.png" id="r1">
+                        <p id="nReviews" class='postDescription'>70 Reviews</p>
+                    </div>
+                </div>
 
-	</div>
-	</div>
-	<div id="wrapper">
-	<div id="container">
-	<div class='newPost'>
-		<hr>
-		<div class='postFront'>
-			<a href="business.html"><img class='postImage' src="images/Cafe4.jpg"></a>
-		</div>
-		<div class='postText'>
-			<a href="business.html"><h2 class='postTitle'>Cafe at the Overlook</h2></a>
-			<img class="rating" src="images/rating.png">
-		<p class='postDescription'>Coffee & Tea, Bakeries, American (New)<br>$ - Price range: Under $10</p>
-		</div>
-		<div class='postAddress'>
-		<li>54721 Burdette St</li>
-		<li>South Bend, IN 46637</li>
-		<li>(574) 271-3727</li>
-	</div>
-	</div>
-	<div class='newPost'>
-		<hr>
-		<div class='postFront'>
-			<a href="business.html"><img class='postImage' src="images/mark1.jpg"></a>
-		</div>
-		<div class='postText'>
-			<a href="business.html"><h2 class='postTitle'>The Mark Dine and Tap</h2></a>
-			<img class="rating" src="images/rating.png">
-		<p class='postDescription'> Gastropubs, American (New)<br>$$ - Price range: $11-30</p>
-	</div>
-	<div class='postAddress'>
-		<li>1234 Eddy St</li>
-		<li>South Bend, IN 46617</li>
-		<li>(574) 204-2767</li>
-	</div>
-	</div>
-		<div class='newPost'>
-		<hr>
-		<div class='postFront'>
-			<a href="business.html"><img class='postImage' src="images/Cafe5.jpg"></a>
-		</div>
-		<div class='postText'>
-			<a href="business.html"><h2 class='postTitle'>Cafe at the Overlook</h2></a>
-			<img class="rating" src="images/rating.png">
-		<p class='postDescription'>Coffee & Tea, Bakeries, American (New)<br>$ - Price range: Under $10</p>
-		</div>
-		<div class='postAddress'>
-		<li>54721 Burdette St</li>
-		<li>South Bend, IN 46637</li>
-		<li>(574) 271-3727</li>
-	</div>
-	</div>
-	<div class='newPost'>
-		<hr>
-		<div class='postFront'>
-			<a href="business.html"><img class='postImage' src="images/pic3.jpg"></a>
-		</div>
-		<div class='postText'>
-			<a href="business.html"><h2 class='postTitle'>The Mark Dine and Tap</h2></a>
-			<img class="rating" src="images/rating.png">
-		<p class='postDescription'> Gastropubs, American (New)<br>$$ - Price range: $11-30</p>
-	</div>
-	<div class='postAddress'>
-		<li>1234 Eddy St</li>
-		<li>South Bend, IN 46617</li>
-		<li>(574) 204-2767</li>
-	</div>
-	</div>
-		<div class='newPost'>
-		<hr>
-		<div class='postFront'>
-			<a href="business.html"><img class='postImage' src="images/Cafe4.jpg"></a>
-		</div>
-		<div class='postText'>
-			<a href="business.html"><h2 class='postTitle'>Cafe at the Overlook</h2></a>
-			<img class="rating" src="images/rating.png">
-		<p class='postDescription'>Coffee & Tea, Bakeries, American (New)<br>$ - Price range: Under $10</p>
-		</div>
-		<div class='postAddress'>
-		<li>54721 Burdette St</li>
-		<li>South Bend, IN 46637</li>
-		<li>(574) 271-3727</li>
-	</div>
-	</div>
-	</div>
-	<div id="ads">
-		<div id="sponsor">sponsored</div>
-		<div class="ad">
-		<img width="150px" src="images/winepeppers.jpg">
-		<div class="ad-title">Tapastrie</div>
-		<img class="ad-pic" src="images/rating2.png">
-		</div>
-		<div class="ad">
-		<img width="150px" src="images/pic4.png">
-		<div class="ad-title">Rohr's Restaurant</div>
-		<img class="ad-pic" src="images/rating3.png">
-		</div>
-	</div>
-	</div>
+                <div class='newPost'>
+                    <hr>
+                    <div class='postFront'>
+                        <a href="business.html"><img class='postImage' src="images/mark1.jpg"></a>
+                    </div>
+                    <div class='postText'>
+                        <a href="business.html"><h2 class='postTitle'>The Mark Dine and Tap</h2></a>
+                        <img class="rating" src="images/rating.png">
+                        <p class='postDescription'> Gastropubs, American (New)<br>$$ - Price range: $11-30</p>
+                    </div>
+                    <div class='postAddress'>
+                        <li>1234 Eddy St</li>
+                        <li>South Bend, IN 46617</li>
+                        <li>(574) 204-2767</li>
+                    </div>
+                </div>
 
-</body>
+                <div class='newPost'>
+                    <hr>
+                    <div class='postFront'>
+                        <a href="business.html"><img class='postImage' src="images/Cafe5.jpg"></a>
+                    </div>
+                    <div class='postText'>
+                        <a href="business.html"><h2 class='postTitle'>Cafe at the Overlook</h2></a>
+                        <img class="rating" src="images/rating.png">
+                        <p class='postDescription'>Coffee & Tea, Bakeries, American (New)<br>$ - Price range: Under $10</p>
+                    </div>
+                    <div class='postAddress'>
+                        <li>54721 Burdette St</li>
+                        <li>South Bend, IN 46637</li>
+                        <li>(574) 271-3727</li>
+                    </div>
+                </div>
+
+                <div class='newPost'>
+                    <hr>
+                    <div class='postFront'>
+                        <a href="business.html"><img class='postImage' src="images/pic3.jpg"></a>
+                    </div>
+                    <div class='postText'>
+                        <a href="business.html"><h2 class='postTitle'>The Mark Dine and Tap</h2></a>
+                        <img class="rating" src="images/rating.png">
+                        <p class='postDescription'> Gastropubs, American (New)<br>$$ - Price range: $11-30</p>
+                    </div>
+                    <div class='postAddress'>
+                        <li>1234 Eddy St</li>
+                        <li>South Bend, IN 46617</li>
+                        <li>(574) 204-2767</li>
+                    </div>
+                </div>
+
+                <div class='newPost'>
+                    <hr>
+                    <div class='postFront'>
+                        <a href="business.html"><img class='postImage' src="images/Cafe4.jpg"></a>
+                    </div>
+                    <div class='postText'>
+                        <a href="business.html"><h2 class='postTitle'>Cafe at the Overlook</h2></a>
+                        <img class="rating" src="images/rating.png">
+                        <p class='postDescription'>Coffee & Tea, Bakeries, American (New)<br>$ - Price range: Under $10</p>
+                    </div>
+                    <div class='postAddress'>
+                        <li>54721 Burdette St</li>
+                        <li>South Bend, IN 46637</li>
+                        <li>(574) 271-3727</li>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ads -->
+            <div id="ads">
+                <div id="sponsor">sponsored</div>
+                <div class="ad">
+                    <img width="150px" src="images/winepeppers.jpg">
+                    <div class="ad-title">Tapastrie</div>
+                    <img class="ad-pic" src="images/rating2.png">
+                </div>
+                <div class="ad">
+                    <img width="150px" src="images/pic4.png">
+                    <div class="ad-title">Rohr's Restaurant</div>
+                    <img class="ad-pic" src="images/rating3.png">
+                </div>
+            </div>
+
+        </div>
+    </body>
 </html>

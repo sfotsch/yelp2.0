@@ -1,73 +1,92 @@
-body{
+body {
     font-family: 'avenir_next_regularregular';
 }
-.rating{
+
+.rating {
     width: 100px;
     margin: 0;
     padding: 0;
+    display: inline-block;
 }
 
-.postFront{
+.postFront {
     width: 180px;
     float: left;
-    height: 150px;
     display: inline-block;
     overflow: hidden;
     margin-top: 5px;
     margin-bottom: 5px;
     vertical-align: middle;
 }
-.postImage{
+
+.postImage {
     width: 100%;
     display: inline-block;
     height: auto;
     vertical-align: middle;
 }
 
-.postDescription{
+.postDescription {
     font-size: small;
     margin: 0;
+    z-index: -1;
 }
 
-.price{
+.postLinks {
+    font-size: small;
+    margin: 0;
+    color: #aa160b;
+    display: inline-block;
+}
+
+h4 {
+    font-size: small;
+    margin: 0;
+    display: inline-block;
+    font-weight: normal;
+}
+
+.price {
    font-family: 'avenir_next_boldbold';
    display: inline-block;
    font-size: small; 
 }
 
-.distance{
+.distance {
     color: #2f398e;
     text-decoration: underline;
     font-size: small;
 }
 
-.postTitle{
+.postTitle {
     font-family: 'avenir_next_boldbold';
-    font-size: medium;
+    font-size: large;
     margin-bottom: 0;
+    text-decoration: underline;
 }
 
-.description{
+.description {
     padding: 0;
     margin: 0 0 0 0;
     font-family: 'Helvetica Neue', sans-serif;
     font-size: x-small;
     display: inline;
+    text-decoration: none;
 }
 
-h3{
+h3 {
     padding: 0;
     margin: 0;
     font-size: 20px;
 }
 
-.postText{
+.postText {
     width: 300px;
     padding-left: 2%;
     float: left;
 }
 
-.postAddress{
+.postAddress, .postRating {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -76,40 +95,56 @@ h3{
     margin-top: 50px;
 }
 
-.newPost{
+.newPost {
     width: 700px;
-    margin: 0;
+    height: 135px;
     position: relative;
     clear: both;
 }
 
-.hr{
+.hr {
     padding: 0;
     margin: 0;
 }
 
-a{
+a {
     color: black;
+    text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
     color: darkblue;
     cursor: pointer;
 }
 
-label{
+label {
     font-size: small;
     font-family: 'Helvetica Neue', sans-serif;
 }
 
-.bubbleForm{
+.bubbleForm {
     font-size: small;
     font-family: 'Helvetica Neue', sans-serif;
 }
 
-.Content{
+.Content {
     margin-top: 10px;
     padding-left: 5%;
     padding-right: 8%;
     padding-top: 0;
+}
+
+.ratingDist {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    padding: 1px;
+    background-color: lightgray;
+    opacity: 0;
+    z-index: 1;
+}
+
+#r:hover #r1{
+    opacity: 1;
 }
