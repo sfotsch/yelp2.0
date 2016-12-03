@@ -173,11 +173,16 @@ i {
 
 .menu{
     width: 300px;
+    margin: 0 15px 15px 15px;
 }
 
 .menu:hover{
     cursor: pointer;
     opacity: 0.7;
+}
+
+#menu-section{
+    margin-left: 15px;
 }
 
 /* The Modal (background) */
@@ -243,11 +248,6 @@ i {
     }
 }
 
-.p1{
-    display: inline-block;
-    font-family: 'avenir_next_boldbold';
-    margin-right: 5px;
-}
 
 #auth-area {
     position:absolute;

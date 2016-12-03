@@ -315,6 +315,7 @@ i {
     margin: 5px 0 0 3px;
     padding: 0;
     float: left;
+    width: 200px;
 }
 
 .info-list li{

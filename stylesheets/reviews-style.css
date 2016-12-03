@@ -445,10 +445,10 @@ fieldset, label { margin: 0; padding: 0; }
     margin: 0 0 0 30px;
 }
 
-.left {
+.left5 .left4 .left3 .left2 .left1 {
   display:inline-block;  
-  width: 80%;
   height:100%;
+  width: 80%;
   padding:0;
   margin:0;
   margin-right:-4px;
@@ -456,7 +456,8 @@ fieldset, label { margin: 0; padding: 0; }
     background-color: #d02a1d;
 }
 
-.right {
+
+.right5 {
   display:inline-block;
   width: 20%;
   height:100%;
@@ -469,7 +470,7 @@ fieldset, label { margin: 0; padding: 0; }
 
 #five-star-section{
     width: 80px;
-    border: 1px solid lightgray;
+    border: 2px solid lightgray;
     height:12px;
     margin: 10px 0 0 30px;
 }
