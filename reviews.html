@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheets/reviews-style.css">
+    <link href="assets/webfontkit-Avenir/stylesheetAvenir.css" rel="stylesheet" type="text/css">
+    <script src="https://use.fontawesome.com/ee3df41006.js"></script>
+    <script src="stylesheets/script.js"></script>
+    <link rel="icon" href="images/icon.png">
+    <script type="text/javascript">
+        function changeTag(ht) {
+            var tags = [
+                    'business',
+                    'menu',
+                    'photos',
+                    'reviews',
+                    'similar'
+                ];
+            for ( var x = 0; x < tags.length; x++ ) {
+                document.getElementById(tags[x]).style.display = 'none';
+            }
+            document.getElementById(ht).style.display = 'block';
+            if(ht==="menu"){
+                document.getElementById('sidenav').style.height = '2300px';
+            }else if (ht==="reviews"){
+                document.getElementById('sidenav').style.height = '1300px';
+            }else{
+                document.getElementById('sidenav').style.height = '100%';
+            }
+    
+
+        }
+        function submitReview() {
+            document.getElementById('write-review').style.display = 'none';
+            document.getElementById('review-submitted').style.display = 'block';
+        }
+    </script>
+    <title>Yelp: Cafe at the Overlook</title>
+</head>
+<body>
+
+<article id="auth-area">
+    <article id="auth-buttons">
+        <button id="login-button">Log In</button>
+        <p id="linedetail">|</p>
+        <button id="signup-button">Sign Up</button>
+    </article>
+</article>
+
+	<div id="header">
+			<div id="yelp-section">
+				<a href="index.html"><img id="yelp" src="images/yelp3.png"></a>
+			</div>
+			<div id=search-section>
+		<form>
+			<div id="find-section">
+				<p id ="find">Find</p><input class="input" type="text" name="find" placeholder="tacos, cheap dinner, Max's">
+			</div>
+			<div id="location-section">
+				<p id="near">Near</p><input class="input" type="text" name="location" placeholder="location">
+			</div>
+		<button id="search-button" onclick="search.html"><img id="search-pic" src="images/search.png"></button>
+		</form>
+	</div>
+	</div>
+
+  <div id="main-section">
+    <div id="sidenav" class="sidenav">
+        <a class="selected" href="business.html"><i style="font-size: 38px;" class="fa fa-home fa-2x" aria-hidden="true"></i></br>
+        Business</a>
+        <a href="menu.html">
+        <i class="fa fa-cutlery fa-2x" aria-hidden="true"></i></br>
+        Menu</a>
+        <a href="photo.html" style="margin-bottom: 0"><i style="font-size: 30px" class="fa fa-camera fa-2x" aria-hidden="true"></i></br>
+        Photos</a>
+        <div class="selected-icon">
+        <a style="color: white;" href="reviews.html"><i style="color: white;" class="fa fa-star fa-2x" aria-hidden="true"></i></br>
+        Reviews</a>
+        </div>
+        <a href="similar.html"><i class="fa fa-link fa-2x" aria-hidden="true"></i></br>
+        Similar</a>
+    </div>
+   
+
+	<div id="business" class="container">
+        <h1 class="business-name">Cafe at the Overlook</h1>
+        <!--<h1 class="subtitle">Reviews</h1>-->
+        <br>
+        <div>
+            <img class="rating" src="images/rating.png">
+            <p class="numratings">70 Reviews</p>
+        </div>
+        <br>
+        <form id="write-review">
+            <div id="get-rating">
+                <h3 id="review-title">How would you rate this business?</h3>
+                <img id="review-rating" src="images/rating0.png">
+            </div>
+            <input id="review-input" type="text" name="review" placeholder=
+            "Your review helps others learn about great local businesses.">
+            <br>
+            <input id="submit-review" type="submit" onclick="submitReview()">
+        </form>
+        <div id="review-submitted" style="display:none;">
+            <h3 id="submitted-review">Thanks for your review!</h3>
+        </div>
+        <div class="review">
+            <hr>
+            <div class="review-user">
+                <img class="review-pic" src="images/john.jpg">
+                <p class="review-name">John R.</p>
+                <p class="review-num">1 Reviews</p>
+                <img class="review-rating" src="images/rating2.png">
+                <p class="review-num">0 users found this review useful</p>
+                <button class="review-btn" onclick="reviewLike()">Useful</button>
+                <button class="review-btn" onclick="reviewDislike()">Not Useful</button>
+            </div>
+            <p class="review-text">Cheery, cozy, unpretentious cafe serving delicious breakfast at
+            criminally underpriced rates. We visited this place on a trip to
+            South Bend, and it was one of those culinary diamonds in the rough
+            located in a pretty nondescript setting.
+            The staff is pleasant without being too chatty, and very efficient. 
+            
+            Even though we went on a Sunday morning, we had no problem getting a
+            huge corner booth (there were 7 of us) without a waiting time. I'm
+            guessing the place was not as full as it normally is, since the
+            college students must be on their summer vacations.
+            </p>
+        </div>
+        <div class="review">
+            <hr>
+            <div class="review-user">
+                <img class="review-pic" src="images/shawn.jpg">
+                <p class="review-name">Shawn F.</p>
+                <p class="review-num">5870 Reviews</p>
+                <img class="review-rating" src="images/rating.png">
+                <p class="review-num">2873 users found this review useful</p>
+                <button class="review-btn" onclick="reviewLike()">Useful</button>
+                <button class="review-btn" onclick="reviewDislike()">Not Useful</button>
+            </div>
+            <p class="review-text">
+            A small breakfast spot in a college housing area, I'm into it, even
+            though there were a few times when I felt old as hell! 
+
+            This cozy cafe is a great stop for a quick bite and a study session.
+            There's seating both inside and outside, but I opted to dine inside
+            so I could use my laptop without the sunny glare. The menu is
+            written on the wall and has tons of great options for breakfast and
+            lunch. I went with the build your bfast sandwich option. 
+            A waffle breakfast sandwich with chorizo, avocado, eggs, spinach and
+            a light hollandaise sauce. F*ck yes, this was an amazing treat, the
+            waffle was sweet, crunchy and combined with spicy chorizo and salty
+            hollandaise made for pure tasty bliss.
+            </p>
+        </div>
+        <div class="review">
+            <hr>
+            <div class="review-user">
+                <img class="review-pic" src="images/jenna.jpg">
+                <p class="review-name">Jenna W.</p>
+                <p class="review-num">587 Reviews</p>
+                <img class="review-rating" src="images/rating3.png">
+                <p class="review-num">100030 users found this review useful</p>
+                <button class="review-btn" onclick="reviewLike()">Useful</button>
+                <button class="review-btn" onclick="reviewDislike()">Not Useful</button>
+            </div>
+            <p class="review-text">
+             I was in Southbend this weekend for a wedding, and needed to find a
+             place where I could get food and coffee and find a quiet corner to
+             study. Thankfully, Cafe at the Overlook served all three purposes!
+             I loved the place so much I even took my parents back later that
+             weekend after all the wedding festivities had ended! It definitely
+             beat paying for overpriced food at the bistro next door.
+
+             I tried the Jerk Panini and also the BBQ Pork sandwich. The first
+             with a side of soup and the second with a side of salad. Both were
+             delicious options and super reasonably priced for a filling meal
+             ($10 with the add-on side). The pulled pork sandwich was pretty
+             standard, nothing spectacular. 
+            </p>
+        </div>
+    </div>
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">×</span>
+  <img class="modal-content" id="img01">
+</div>
+
+
+</div>
+</body>
+</html>
