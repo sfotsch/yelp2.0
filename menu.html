@@ -7,34 +7,6 @@
     <script src="https://use.fontawesome.com/ee3df41006.js"></script>
     <script src="stylesheets/script.js"></script>
     <link rel="icon" href="images/icon.png">
-    <script type="text/javascript">
-        function changeTag(ht) {
-            var tags = [
-                    'business',
-                    'menu',
-                    'photos',
-                    'reviews',
-                    'similar'
-                ];
-            for ( var x = 0; x < tags.length; x++ ) {
-                document.getElementById(tags[x]).style.display = 'none';
-            }
-            document.getElementById(ht).style.display = 'block';
-            if(ht==="menu"){
-                document.getElementById('sidenav').style.height = '2300px';
-            }else if (ht==="reviews"){
-                document.getElementById('sidenav').style.height = '1300px';
-            }else{
-                document.getElementById('sidenav').style.height = '100%';
-            }
-    
-
-        }
-        function submitReview() {
-            document.getElementById('write-review').style.display = 'none';
-            document.getElementById('review-submitted').style.display = 'block';
-        }
-    </script>
     <title>Yelp: Cafe at the Overlook</title>
 </head>
 <body>

@@ -7,34 +7,6 @@
     <script src="https://use.fontawesome.com/ee3df41006.js"></script>
     <script src="stylesheets/script.js"></script>
     <link rel="icon" href="images/icon.png">
-    <script type="text/javascript">
-        function changeTag(ht) {
-            var tags = [
-                    'business',
-                    'menu',
-                    'photos',
-                    'reviews',
-                    'similar'
-                ];
-            for ( var x = 0; x < tags.length; x++ ) {
-                document.getElementById(tags[x]).style.display = 'none';
-            }
-            document.getElementById(ht).style.display = 'block';
-            if(ht==="menu"){
-                document.getElementById('sidenav').style.height = '2300px';
-            }else if (ht==="reviews"){
-                document.getElementById('sidenav').style.height = '1300px';
-            }else{
-                document.getElementById('sidenav').style.height = '100%';
-            }
-    
-
-        }
-        function submitReview() {
-            document.getElementById('write-review').style.display = 'none';
-            document.getElementById('review-submitted').style.display = 'block';
-        }
-    </script>
     <title>Yelp: Cafe at the Overlook</title>
 </head>
 <body>
@@ -86,16 +58,37 @@
         <h1 class="business-name">Cafe at the Overlook</h1>
         <!--<h1 class="subtitle">Reviews</h1>-->
         <br>
-        <div>
-            <img class="rating" src="images/rating.png">
+        <div class="overall-rating-section">
+            <i class="fa fa-star overall-rating" aria-hidden="true"></i>
+            <i class="fa fa-star overall-rating" aria-hidden="true"></i>
+            <i class="fa fa-star overall-rating" aria-hidden="true"></i>
+            <i class="fa fa-star overall-rating" aria-hidden="true"></i>
+            <i class="fa fa-star overall-rating" aria-hidden="true"></i>
             <p class="numratings">70 Reviews</p>
         </div>
+        <div id="five-star-section">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+
         <br>
         <form id="write-review">
             <div id="get-rating">
                 <h3 id="review-title">How would you rate this business?</h3>
-                <img id="review-rating" src="images/rating0.png">
-            </div>
+                <div class="rating2">
+<fieldset id="rating-section" class="rating2">
+    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+</fieldset>
+            </div><br><br>
             <input id="review-input" type="text" name="review" placeholder=
             "Your review helps others learn about great local businesses.">
             <br>
@@ -112,8 +105,8 @@
                 <p class="review-num">1 Reviews</p>
                 <img class="review-rating" src="images/rating2.png">
                 <p class="review-num">0 users found this review useful</p>
-                <button class="review-btn" onclick="reviewLike()">Useful</button>
-                <button class="review-btn" onclick="reviewDislike()">Not Useful</button>
+                <button class="review-btn"><i style="color: white; margin-right: 3px" class="fa fa-thumbs-up" aria-hidden="true"></i>Useful</button>
+                <button class="review-btn"><i style="color: white; margin-right: 3px" class="fa fa-thumbs-down" aria-hidden="true"></i>Not Useful</button>
             </div>
             <p class="review-text">Cheery, cozy, unpretentious cafe serving delicious breakfast at
             criminally underpriced rates. We visited this place on a trip to

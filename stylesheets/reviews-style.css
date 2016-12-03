@@ -297,3 +297,179 @@ i {
     color: red;
     cursor: pointer;
 }
+
+.review-btn{
+    font-family: 'avenir_next_regularregular';
+    color: white;
+    background-color: #aa160b;
+    border-radius: 3px;
+    border: none;
+}
+
+#review-title{
+    font-family: 'avenir_next_regularregular';
+    font-size: 15px;
+    margin: 0 0 0 30px;
+}
+
+#review-input{
+    width: 500px;
+    height: 50px;
+    margin: 0 0 0 30px;
+    display: block;
+}
+
+#submit-review{
+    margin: 0 0 0 480px;
+}
+
+#submitted-review{
+    font-family: 'avenir_next_boldbold';
+    color: #c13e37; 
+    margin: 20px 0 0 30px;
+}
+
+.review{
+    clear: both;
+    width: 800px;
+    font-family: 'avenir_next_regularregular';
+}
+
+.review-user{
+    float: left;
+    width: 100px;
+}
+
+.review-pic{
+    width: 100px;
+    height: 100px;
+    margin: 0 0 0 30px;
+    display: inline-block;
+}
+
+.review-name{
+    font-family: 'avenir_next_boldbold';
+    margin: 0 0 0 30px;
+    width: 100px;
+    text-align: center;
+}
+
+.review-rating{
+    width: 100px;
+    margin: 0 0 0 30px;
+}
+
+.review-text{
+    font-family: 'avenir_next_regularregular';
+    font-size: 15px;
+    margin: 0 0 0 50px;
+    width: 400px;
+    display: inline-block;
+}
+
+hr {
+    margin: 10px;
+}
+
+#list2{
+    display: inline-block;
+    margin: 10px 0 0 100px;
+}
+
+.numratings{
+    font-family: 'avenir_next_regularregular';
+    color: gray;
+    position: block;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 0 0 0;
+    padding: 0;
+}
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+fieldset, label { margin: 0; padding: 0; }
+
+/****** Style Star Rating Widget *****/
+
+.rating2 { 
+  border: none;
+  float: left;
+}
+
+.rating2 > input { display: none; } 
+.rating2 > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating2 > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating2 > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating2 > input:checked ~ label, /* show gold star when clicked */
+.rating2:not(:checked) > label:hover, /* hover current star */
+.rating2:not(:checked) > label:hover ~ label { color:  #aa160b; cursor: pointer;
+    } /* hover previous stars in list */
+
+.rating2 > input:checked + label:hover, /* hover current star when changing rating */
+.rating2 > input:checked ~ label:hover,
+.rating2 > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating2 > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+.overall-rating{
+    color: white;
+    background-color: #aa160b;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+#rating-section{
+    margin: 0 0 0px 15px;
+    display: block;
+    width: 100%;
+}
+
+.overall-rating-section{
+    margin: 0 0 0 30px;
+}
+
+.left {
+  display:inline-block;  
+  width: 80%;
+  height:100%;
+  padding:0;
+  margin:0;
+  margin-right:-4px;
+    vertical-align:top;
+    background-color: #d02a1d;
+}
+
+.right {
+  display:inline-block;
+  width: 20%;
+  height:100%;
+  padding:0;
+  margin:0;
+  margin-right:-4px;
+    vertical-align:top;
+    background-color:white;
+}
+
+#five-star-section{
+    width: 80px;
+    border: 1px solid lightgray;
+    height:12px;
+    margin: 10px 0 0 30px;
+}
