@@ -156,7 +156,7 @@ i {
 }
 
 .container{
-    margin: 20px 0 0 0;
+    margin: 20px 0 0 20px;
     padding: 0 0 0 20px;
     width: 750px;
     /*height: 600px;*/
@@ -437,15 +437,29 @@ fieldset, label { margin: 0; padding: 0; }
 
 #rating-section{
     margin: 0 0 0px 15px;
-    display: block;
+    display: inline-block;
     width: 100%;
+
+}
+
+.nr{
+    display: inline-block;
+    font-family: 'avenir_next_regularregular';
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.sec{
+    clear: both;
+    height: 20px;
 }
 
 .overall-rating-section{
-    margin: 0 0 0 30px;
+    margin: -20px 0 0 35px;
+    padding: 0;
 }
 
-.left5 .left4 .left3 .left2 .left1 {
+.left5, .left4, .left3, .left2, .left1 {
   display:inline-block;  
   height:100%;
   width: 80%;
@@ -456,8 +470,14 @@ fieldset, label { margin: 0; padding: 0; }
     background-color: #d02a1d;
 }
 
+.left5{ width: 55%; }
+.left4{ width: 25%; }
+.left3{ width: 10%; }
+.left2{ width: 9%; }
+.left1{ width: 1%; }
 
-.right5 {
+
+.right5, .right4, .right3, .right2, .right1{
   display:inline-block;
   width: 20%;
   height:100%;
@@ -468,9 +488,10 @@ fieldset, label { margin: 0; padding: 0; }
     background-color:white;
 }
 
-#five-star-section{
+#five-star-section, #four-star-section, #three-star-section, #two-star-section, #one-star-section {
     width: 80px;
     border: 2px solid lightgray;
     height:12px;
     margin: 10px 0 0 30px;
+    display: inline-block;
 }
