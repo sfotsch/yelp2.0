@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="../../stylesheets/reviews-style.css">
         <link href="../../assets/webfontkit-Avenir/stylesheetAvenir.css" rel="stylesheet" type="text/css">
         <script src="https://use.fontawesome.com/ee3df41006.js"></script>
-        <script src="../../stylesheets/script.js"></script>
+        <script src="../../review-script.js"></script>
         <link rel="icon" href="../../images/icon.png">
         <title>Yelp: Cafe at the Overlook</title>
     </head>
@@ -131,11 +131,10 @@
                         <input id="review-input" type="text" name="review" placeholder=
                         "Your review helps others learn about great local businesses.">
                         <br>
-                        <input id="submit-review" type="submit" onclick="submitReview()">
+                        <div id="submit-review">Submit</div>
                     </form>
-                    <div id="review-submitted" style="display:none;">
-                        <h3 id="submitted-review">Thanks for your review!</h3>
-                    </div>
+                        <h3 id="submitted-review">Thank you! Your submission is pending </h3>
+
                     <div class="review">
                         <hr>
                         <div class="review-user">

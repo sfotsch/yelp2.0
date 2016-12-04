@@ -336,6 +336,9 @@ i {
 
 #submit-review{
     margin: 0 0 0 480px;
+    font-size: 12px;
+    width: 45px;
+    padding: 0 0 0 5px;
 }
 
 #submitted-review{
@@ -524,4 +527,20 @@ fieldset, label { margin: 0; padding: 0; }
     font-size: 14px;
     line-height: 15px;
     width: 150px;
+}
+
+#submit-review{
+    background-color: #aa160b;
+    color: white;
+    border: 1px solid #aa160b;
+    border-radius: 3px;
+    font-family: 'avenir_next_regularregular';
+}
+
+#submit-review:hover{
+    cursor: pointer;
+}
+
+#submitted-review{
+    display: none;
 }
