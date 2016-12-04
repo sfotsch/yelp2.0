@@ -380,3 +380,15 @@ i {
 #menu{
     display: none;
 }
+
+.overall-rating-section{
+    margin: 0px 0 0 35px;
+    padding: 0;
+}
+
+.overall-rating{
+    color: white;
+    background-color: #aa160b;
+    padding: 3px;
+    border-radius: 3px;
+}

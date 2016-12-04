@@ -463,16 +463,12 @@ fieldset, label { margin: 0; padding: 0; }
 
 }
 
-.nr{
-    display: inline-block;
-    font-family: 'avenir_next_regularregular';
-    font-size: 13px;
-    line-height: 13px;
-}
-
 .sec{
     clear: both;
     height: 20px;
+    font-family: 'avenir_next_regularregular';
+    height: 15px;
+    margin-bottom: 3px;
 }
 
 .overall-rating-section{
@@ -513,8 +509,18 @@ fieldset, label { margin: 0; padding: 0; }
     width: 80px;
     border: 2px solid lightgray;
     height:12px;
-    margin: 10px 0 0 30px;
+    margin: 15px 0 0 30px;
     display: inline-block;
+}
+
+.nr{
+    display: inline-block;
+    font-family: 'avenir_next_regularregular';
+    font-size: 13px;
+    line-height: 10px;
+    padding: 0;
+    position:relative;
+  top:-8px;
 }
 
 .buttons{
