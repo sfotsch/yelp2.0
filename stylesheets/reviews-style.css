@@ -544,3 +544,16 @@ fieldset, label { margin: 0; padding: 0; }
 #submitted-review{
     display: none;
 }
+
+#u1, #u2, #u3{
+    font-size: 11px;
+    width: 50px;
+    padding: 3px 3px 3px 7px;
+}
+
+#n1, #n2, #n3{
+    font-size: 11px;
+    width: 70px;
+    padding: 3px 3px 3px 7px;
+}
+
