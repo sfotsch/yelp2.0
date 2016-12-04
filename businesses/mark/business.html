@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../stylesheets/business-style.css">
+        <link href="../../assets/webfontkit-Avenir/stylesheetAvenir.css" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://use.fontawesome.com/ee3df41006.js"></script>
+        <script src="script.js"></script>
+        <link rel="icon" href="../../images/icon.png">
+        <title>Yelp: The Mark Dine and Tap</title>
+    </head>
+    <body>
+
+        <!-- User Auth -->
+        <article id="auth-area">
+            <article id="auth-buttons">
+                <button id="login-button">Log In</button>
+                <p id="linedetail">|</p>
+                <button id="signup-button">Sign Up</button>
+            </article>
+        </article>
+
+        <!-- Top Bar -->
+        <div id="header">
+            <div id="yelp-section">
+                <a href="../../index.html"><img id="yelp" src="../../images/yelp3.png"></a>
+            </div>
+            <div id=search-section>
+                <form>
+                    <div id="find-section">
+                        <p id ="find">Find</p><input class="input" type="text" name="find" placeholder="tacos, cheap dinner, Max's">
+                    </div>
+                    <div id="location-section">
+                        <p id="near">Near</p><input class="input" type="text" name="location" placeholder="location">
+                    </div>
+                    <button id="search-button" onclick="../../search.html"><img
+                        id="search-pic" src="../../images/search.png"></button>
+                </form>
+            </div>
+        </div>
+
+        <div id="main-section">
+            <div id="sidenav" class="sidenav">
+                <div class="selected-icon">
+                    <i style="font-size: 38px; color: white;" class="fa fa-home fa-2x" aria-hidden="true"></i>
+                    <a class="selected" style="color: white;" onclick="changeTag('business');" href="#business">About</a>
+                </div>
+                <a href="menu.html">
+                    <i class="fa fa-cutlery fa-2x" aria-hidden="true"></i></br>
+                    Menu</a>
+                <a href="photo.html">
+                    <i style="font-size: 30px" class="fa fa-camera fa-2x" aria-hidden="true"></i></br>
+                    Photos</a>
+                <a href="reviews.html">
+                    <i class="fa fa-star fa-2x" aria-hidden="true"></i></br>
+                    Reviews</a>
+                <a href="similar.html">
+                    <i class="fa fa-link fa-2x" aria-hidden="true"></i></br>
+                    Similar</a>
+            </div>
+
+            <div id="business" class="container">
+                <div id="col1">
+                    <h1 class="business-name">The Mark Dine and Tap</h1>
+                    <div id="top-section">
+                        <div class="left-section">
+                            <div id="rating-section">
+                                <img class="rating" src="images/rating.png"><p
+                                class="numratings">114 Reviews</p>
+                            </div>
+                            <ul id="main-info" class="main-info">
+                                <li>(574) 204-2767</li>
+                                <li><a id="link"
+                                    href="http://www.themarkdineandtap.com/">themarkdineandtap.com</a></li>
+                                <li>1234 Eddy St</li>
+                                <li>Ste 111</li>
+                                <li>South Bend, IN 46617</li>
+                                <li style="color: black"><i  style="margin-right: 2px; color: black" class="fa fa-clock-o" aria-hidden="true"></i> Open Now</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="description-section">
+                        <h3 id="description-title">Description</h3>
+                        <p id="description-text">
+                            The Mark Dine & Tap offers an incredible dining
+                            experience, conveniently located in the Eddy Street
+                            Commons, adjacent to The University of Notre Dame. The
+                            Mark features a vibrant, big city appeal, coupled with a
+                            unique, made from scratch menu that offers a truly
+                            gourmet meal in a very comfortable setting.
+                        </p>
+
+                        <div id="hours-section">
+                            <h3 id="hours-title">Hours</h3>
+                            <ul class="hours-list">
+                                <li><div style="margin-right: 0px"
+                                    class="p1">Mon</div> 11am-9pm</li>
+                                <li><div style="margin-right: 0px"
+                                    class="p1">Tue</div> 11am-9pm</li>
+                                <li><div style="margin-right: 0px"
+                                    class="p1">Wed</div> 11am-9pm</li>
+                                <li><div style="margin-right: 0px"
+                                    class="p1">Thu</div> 11am-9pm</li>
+                                <li><div style="margin-right: 0px"
+                                    class="p1">Fri</div> 11am-10pm</li>
+                                <li><div style="margin-right: 0px"
+                                    class="p1">Sat</div> 11am-10pm</li>
+                                <li><div style="margin-right: 0px"
+                                    class="p1">Sun</div> 11am-8pm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="col2">
+                    <div id="locationpic-section">
+                        <img id="location-pic" src="images/Cafe1.jpg">
+                    </div>
+                    <div id="more-info-section">
+                        <h3 id="info-title">More Business Info</h3>
+                        <ul class="info-list">
+                            <li><div class="p1">Alcohol</div>Beer and Wine Only</li>
+                            <li><div class="p1">Attire</div>Casual</li>
+                            <li><div class="p1">Caters</div>No</li>
+                            <li><div class="p1">Delivery</div>Yes</li>
+                            <li><div class="p1">Dogs Allowed</div>Yes</li>
+                            <li><div class="p1">Good For</div>Brunch</li>
+                            <li><div class="p1">Good for Working</div>Yes</li>
+                            <li><div class="p1">Parking</div>Private Lot</li>
+                            <li><div class="p1">Price Range</div>Under $10</li>
+                            <li><div class="p1">Take-Out</div>Yes</li>
+                            <li><div class="p1">Takes Reservations</div>No</li>
+                            <li><div class="p1">Wheelchair Accessible</div>Yes</li>
+                            <li><div class="p1">Wi-Fi</div>Free</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
