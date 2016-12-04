@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../stylesheets/similar-style.css">
+        <link rel="stylesheet" href="../../stylesheets/posts.css">
+        <link href="../../assets/webfontkit-Avenir/stylesheetAvenir.css" rel="stylesheet" type="text/css">
+        <script src="https://use.fontawesome.com/ee3df41006.js"></script>
+        <script src="stylesheets/script.js"></script>
+        <link rel="icon" href="../../images/icon.png">
+        <title>Yelp: The Mark Dine and Tap</title>
+    </head>
+    <body>
+
+        <!-- User Auth -->
+        <article id="auth-area">
+        <article id="auth-buttons">
+        <button id="login-button">Log In</button>
+        <p id="linedetail">|</p>
+        <button id="signup-button">Sign Up</button>
+        </article>
+        </article>
+
+        <!-- Top Bar -->
+        <div id="header">
+            <div id="yelp-section">
+                <a href="../../index.html"><img id="yelp" src="../../images/yelp3.png"></a>
+            </div>
+            <div id=search-section>
+                <form>
+                    <div id="find-section">
+                        <p id ="find">Find</p><input class="input" type="text" name="find" placeholder="tacos, cheap dinner, Max's">
+                    </div>
+                    <div id="location-section">
+                        <p id="near">Near</p><input class="input" type="text" name="location" placeholder="location">
+                    </div>
+                    <a href="../../search.html">
+                        <button id="search-button" ><img
+                            id="search-pic" src="../../images/search.png"></button>
+                    </a>
+                </form>
+            </div>
+        </div>
+
+        <div id="main-section">
+            <div id="sidenav" class="sidenav">
+                <a style="margin-bottom: 0px" class="selected" href="business.html"><i style="font-size: 38px;" class="fa fa-home fa-2x" aria-hidden="true"></i></br>
+                    About</a>
+
+
+                <a href="menu.html"  id="menu-button"><i class="fa fa-cutlery fa-2x" aria-hidden="true"></i></br>
+                    Menu</a>
+
+                <a href="photo.html"><i style="font-size: 30px" class="fa fa-camera fa-2x" aria-hidden="true"></i></br>
+                    Photos</a>
+                <a style="margin-bottom: 0" href="reviews.html"><i class="fa fa-star fa-2x" aria-hidden="true"></i></br>
+                    Reviews</a>
+
+                <div class="selected-icon">
+                    <a style="color: white;" href="similar.html"><i style=" color: white;" class="fa fa-link fa-2x" aria-hidden="true"></i></br>
+                        Similar</a>
+                </div>
+            </div>
+
+
+            <div id="business" class="container">
+                <!-- Cafe at the Overlook -->
+                <div class='newPost'>
+                    <hr>
+                    <div class='postFront'>
+                        <a href="../overlook/business.html"><img
+                            class='postImage' src="../overlook/images/cafe.jpg"></a>
+                    </div>
+                    <div class='postText'>
+                        <a href="../overlook/business.html"><h2 class='postTitle'>Cafe at the Overlook</h2></a>
+                        <h4>
+                            Coffee & Tea, Bakeries, American (New)
+                            <br>
+                            $ - Price range: Under $10
+                            <br>
+                            <a href="../overlook/business.html"
+                                class='postLinks'>About</a>
+                            -
+                            <a href="../overlook/menu.html"
+                                class='postLinks'>Menu</a>
+                            -
+                            <a href="../overlook/photo.html" 
+                                class='postLinks'>Photos</a>
+                            -
+                            <a href="../overlook/reviews.html"
+                                class='postLinks'>Reviews</a>
+                        </h4>
+                    </div>
+                    <div id="r" class='postRating'>
+                        <img class="rating" src="../overlook/images/rating.png">
+                        <i class="fa fa-sort-desc" aria-hidden="true"
+                            style="vertical-align:top;"></i>
+                        <br>
+                        <img class='ratingDist' src="../overlook/images/r.png" id="r1">
+                        <p id="nReviews" class='postDescription'>70 Reviews</p>
+                    </div>
+                </div>
+
+                <!-- Legends of Notre Dame -->
+                <div class='newPost'>
+                    <hr>
+                    <div class='postFront'>
+                        <a href="business.html"><img class='postImage'
+                            src="../../images/Cafe5.jpg"></a>
+                    </div>
+                    <div class='postText'>
+                        <a href="business.html"><h2 class='postTitle'>Legends of
+                        Notre Dame</h2></a>
+                        <h4>
+                            American (Traditional)
+                            <br>
+                            $$ - Price range: $11-30
+                            <br>
+                            <a href="business.html"
+                                class='postLinks'>About</a>
+                            -
+                            <a href="menu.html"
+                                class='postLinks'>Menu</a>
+                            -
+                            <a href="photo.html" 
+                                class='postLinks'>Photos</a>
+                            -
+                            <a href="reviews.html"
+                                class='postLinks'>Reviews</a>
+                        </h4>
+                    </div>
+                    <div id="r" class='postRating'>
+                        <img class="rating" src="images/rating.png">
+                        <i class="fa fa-sort-desc" aria-hidden="true"
+                            style="vertical-align:top;"></i>
+                        <br>
+                        <img class='ratingDist' src="images/r1.png" id="r1">
+                        <p id="nReviews" class='postDescription'>70 Reviews</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
