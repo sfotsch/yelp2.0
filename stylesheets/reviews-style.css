@@ -156,7 +156,7 @@ i {
 }
 
 .container{
-    margin: 20px 0 0 20px;
+    margin: 20px 0 30px 20px;
     padding: 0 0 0 20px;
     width: 750px;
     /*height: 600px;*/
@@ -304,6 +304,21 @@ i {
     background-color: #aa160b;
     border-radius: 3px;
     border: none;
+    display: inline-block;
+}
+
+.review-btn:hover{
+    cursor: pointer;
+}
+
+.nuseful{
+    margin: 0 0 0 0;
+
+}
+
+.useful{
+    margin: 0 10px 0 0;
+    float: left
 }
 
 #review-title{
@@ -362,13 +377,15 @@ i {
 .review-text{
     font-family: 'avenir_next_regularregular';
     font-size: 15px;
-    margin: 0 0 0 50px;
-    width: 400px;
+    margin: 0 0 0 90px;
+    width: 350px;
     display: inline-block;
 }
 
 hr {
-    margin: 10px;
+    margin: 20px 10px 20px 10px;
+    width: 700px;
+
 }
 
 #list2{
@@ -494,4 +511,17 @@ fieldset, label { margin: 0; padding: 0; }
     height:12px;
     margin: 10px 0 0 30px;
     display: inline-block;
+}
+
+.buttons{
+    clear: both;
+    width: 500px;
+    margin: 0 0 20px 30px;
+}
+
+.review-num{
+    margin: 0 0 0 30px;
+    font-size: 14px;
+    line-height: 15px;
+    width: 150px;
 }
